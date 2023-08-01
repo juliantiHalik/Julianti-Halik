@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    <title>Julianti Halik</title>
+</head>
+<body>
+
+    <header>
+        <!--Untuk Logo yang ada di pojok kiri atas-->
+        <a href="#" class="logo">Julianti Halik</a>
+        <nav>
+            <ul>
+                <li><a href="#home">News</a></li>
+                <li><a href="#service" class="active">About Me</a></li>
+            </ul>
+        </nav>
+
+        <!--Untuk menu di pojok kanan atas-->
+        <div class="menu-toggle">
+            <i class="fa fa-th"></i>
+        </div>
+    </header>
+
+    <!-- untuk body pertama: introduction.-->
+    <section class="main">
+        <div>
+            <h2>Hello, I'm Julianti Halik<br>
+                <span>Website Developer Intern</span></h2>
+            <h3>I believe that programming is a form of art too,<br> which encourages me to keep trying to make my masterpiece!</h3>
+            <a href="https://drive.google.com/file/d/18pNhW9hsEgw12ca2P8JnN65xcl0u_hCJ/view?usp=drivesdk" target="_blank" class="main-btn">View my experiences</a>
+          
+        </div>
+    </section>
+
+    <!-- Untuk Sidebar: summary dan beberapa website.-->
+    <div class="row">
+        <div class="sidebar">
+               <ul class="list">
+                   <li class="first"><a href="https://learn.microsoft.com/en-us/" target="_blank">Microsoft Learn</a></li>
+                   <li><a href="https://www.pluralsight.com/browse" target="_blank">Pluralsight</a></li>
+                   <li><a href="https://teamtreehouse.com/library" target="-blank">Treehouse</a></li>
+                   <li><a href="https://www.dicoding.com/learningpaths/7" target="_blank">Dicoding</a></li>
+                   <li class="last"><a href="https://www.w3schools.com/" target="_blank">W3School</a></li>
+               </ul>
+
+        </div>
+        <div class="content">
+            <h3 style="text-align: justify; font-size: larger;">Summary</h3>
+            <p>This is My Website, i am a final year student of The Faculty of Agriculture. Instead of following the career path according to the major, i choose to switch to IT. i am currently studying to become A Web Developer. Creating a website is so much fun, it's like playing a puzzle. Everytime you got to match one piece of the puzzle makes you satisfied. <strong>Visit the website aside to learn more about the basics of being a web developer.</strong></p>
+        </div>
+    </div>
+
+    <!-- untuk Slideshow-->
+    <section>
+        <div class="slideshowtitle">
+            <h2>How to Become a web developer</h2>
+        </div>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1/4</div>
+              <img src="slide01.webp" style="width:100%">
+              <div class="text">The Things That a web developer needs is...</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2/4</div>
+              <img src="Slide 2.jpeg" style="width:100%">
+              <div class="text">Learn The Basic of HTML, CSS, and JavaScript</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3/4</div>
+              <img src="slide 3.webp" style="width:100%">
+              <div class="text">Get to Know UI/UX</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">4/4</div>
+              <img src="slide 4.jpeg" style="width:100%">
+              <div class="text">Learn SQL and PHP</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+    </section>
+
+    <!--untuk Gallery-->
+    <section>
+        <div class="gallery">
+        <div class="titlegallery"><h2>The Reason i am interested in this job is...</h2></div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="Gallery1.jpeg">
+                    <img src="Gallery1.jpeg" alt="Web developer in-demand" width="600" height="400">
+                </a>
+            <div class="desc">Web Developers are In-Demand.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="galery2.webp">
+                    <img src="galery2.webp" alt="Forest" width="600" height="400">
+                </a>
+            <div class="desc">High-paying Salary.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+                <a target="_blank" href="gallery3.jpeg">
+                    <img src="gallery3.jpeg" alt="Northern Lights" width="600" height="400">
+                </a>
+            <div class="desc">Potential to Work Remotely</div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="gallery4.png">
+                    <img src="gallery4.jpeg" alt="Mountains" width="600" height="400">
+                </a>
+            <div class="desc">Be A Part of the Job for the future.</div>
+        </div>
+        </div>
+    
+<!-- untuk modal-->
+<div class="modal-button">
+        <h2>Do You Enjoy This Article?</h2>
+<button id="myBtn">Yes, I do.</button>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>THANK YOU!</h1>
+    <p>Keep up with the latest news in this website.</p>
+  </div>
+</div>
+<button id="myBtns">No, I didn't.</button>
+<div id="myModals" class="modal">
+    <div class="modal-contents">
+    <span class="closes">&times;</span>
+    <h1>THANK YOU, for visiting this website</h1>
+  </div>
+</div>
+</div>
+
+<!--Ajax Request-->
+<div class="ajax">
+    <button id="ajaxButton">AJAX Request</button>
+        <div id="response"></div>
+</div>
+
+<!--Untuk footer-->
+    <footer class="footer">
+        <dif class="footer-title">Let share experiences!</dif>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/julianti-halik-a239351a5/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:julia@fairtech.com.sg" target="_blank"><i class="fa fa-envelope-o"></i></a>
+            <a href="https://wa.me/6285398846923" target="_blank"><i class="fa fa-comment"></i></a>
+        </div>
+    </footer>
+
+    <section class="to-top">
+        <a href="#"><i class="fa fa-chevron-circle-up"></i></a>
+    </section>
+</section>
+<!--Semua Script ada disini
+- untuk navigasi menu-->
+<script>
+    $(Document).ready(function () {
+        $(".menu-toggle").click(function () {
+            $('nav').toggleClass('active');
+        })
+    })
+</script>
+
+<!-- untuk Slideshow-->
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+<!--untuk modal 1-->
+<script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+<script>
+var modals = document.getElementById("myModals");
+var btns = document.getElementById("myBtns");
+var spans = document.getElementsByClassName("closes")[0];
+
+btns.onclick = function() {
+  modals.style.display = "block";
+}
+
+spans.onclick = function() {
+  modals.style.display = "none";
+}
+</script>
+
+<!--untuk Ajax-->
+<script src="script.js"></script>
+</body>
+</html>
+
+<!-- untuk to top
+<script>
+    const toTop = document.querySelector(".to-top");
+
+    window.addEventListener("scroll", () => {
+        if ( window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+    })
+</script>-->
