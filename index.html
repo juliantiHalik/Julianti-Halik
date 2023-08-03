@@ -15,17 +15,25 @@
     <header>
         <!--Untuk Logo yang ada di pojok kiri atas-->
         <a href="#" class="logo">Julianti Halik</a>
-        <nav>
-            <ul>
-                <li><a href="#home">News</a></li>
-                <li><a href="#service" class="active">About Me</a></li>
-            </ul>
-        </nav>
-
-        <!--Untuk menu di pojok kanan atas-->
-        <div class="menu-toggle">
-            <i class="fa fa-th"></i>
-        </div>
+        
+        <ul>
+            <li class="dropdown">
+                <a href="javascript:void (0)" class="dropbtn">News</a>
+                <div class="dropdown-content">
+                    <a href="#">August</a>
+                    <a href="#">July</a>
+                </div>
+            </li>
+            <!--<li> <a href="#about">About</a></li>-->
+            <li class="dropdown">
+                <a href="javascript:void (0)" class="dropbtn">About</a>
+                <div class="dropdown-content">
+                    <a href="#">My Self</a>
+                    <a href="#">My Experiences</a>
+                </div>
+            </li>
+            <li> <a href="#contact">Contact Me</a></li>
+        </ul>
     </header>
 
     <!-- untuk body pertama: introduction.-->
@@ -35,7 +43,6 @@
                 <span>Website Developer Intern</span></h2>
             <h3>I believe that programming is a form of art too,<br> which encourages me to keep trying to make my masterpiece!</h3>
             <a href="https://drive.google.com/file/d/18pNhW9hsEgw12ca2P8JnN65xcl0u_hCJ/view?usp=drivesdk" target="_blank" class="main-btn">View my experiences</a>
-          
         </div>
     </section>
 
@@ -49,11 +56,10 @@
                    <li><a href="https://www.dicoding.com/learningpaths/7" target="_blank">Dicoding</a></li>
                    <li class="last"><a href="https://www.w3schools.com/" target="_blank">W3School</a></li>
                </ul>
-
         </div>
         <div class="content">
             <h3 style="text-align: justify; font-size: larger;">Summary</h3>
-            <p>This is My Website, i am a final year student of The Faculty of Agriculture. Instead of following the career path according to the major, i choose to switch to IT. i am currently studying to become A Web Developer. Creating a website is so much fun, it's like playing a puzzle. Everytime you got to match one piece of the puzzle makes you satisfied. <strong>Visit the website aside to learn more about the basics of being a web developer.</strong></p>
+            <p>This is My Website, i am a final year student of The Faculty of Agriculture. Instead of following the career path according to the major, i choose to switch to IT. I am currently studying to become A Web Developer. Creating a website is so much fun, it's like playing a puzzle. Everytime you got to match one piece of the puzzle makes you satisfied. <strong>Visit the website aside to learn more about the basics of being a web developer.</strong></p>
         </div>
     </div>
 
@@ -102,7 +108,7 @@
     <!--untuk Gallery-->
     <section>
         <div class="gallery">
-        <div class="titlegallery"><h2>The Reason i am interested in this job is...</h2></div>
+        <div class="titlegallery"><h2>The Reason i am interested in this job</h2></div>
         <div class="responsive">
             <div class="gallery">
                 <a target="_blank" href="Gallery1.jpeg">
@@ -161,6 +167,7 @@
 <div class="ajax">
     <button id="ajaxButton">AJAX Request</button>
         <div id="response"></div>
+        <p id="status"></p>
 </div>
 
 <!--Untuk footer-->
@@ -179,89 +186,8 @@
         <a href="#"><i class="fa fa-chevron-circle-up"></i></a>
     </section>
 </section>
-<!--Semua Script ada disini
-- untuk navigasi menu-->
-<script>
-    $(Document).ready(function () {
-        $(".menu-toggle").click(function () {
-            $('nav').toggleClass('active');
-        })
-    })
-</script>
 
-<!-- untuk Slideshow-->
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
-
-<!--untuk modal 1-->
-<script>
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-</script>
-
-<script>
-var modals = document.getElementById("myModals");
-var btns = document.getElementById("myBtns");
-var spans = document.getElementsByClassName("closes")[0];
-
-btns.onclick = function() {
-  modals.style.display = "block";
-}
-
-spans.onclick = function() {
-  modals.style.display = "none";
-}
-</script>
-
-<!--untuk Ajax-->
 <script src="script.js"></script>
+
 </body>
 </html>
-
-<!-- untuk to top
-<script>
-    const toTop = document.querySelector(".to-top");
-
-    window.addEventListener("scroll", () => {
-        if ( window.pageYOffset > 100) {
-            toTop.classList.add("active");
-        } else {
-            toTop.classList.remove("active");
-        }
-    })
-</script>-->
